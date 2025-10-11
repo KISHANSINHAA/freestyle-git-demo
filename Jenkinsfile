@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 git branch: 'main', url: 'https://github.com/KISHANSINHAA/freestyle-git-demo.git'
-                bat 'C:/Users/sinha/AppData/Local/Programs/Python/Python31/python.exe hello.py'
+                sh 'C:/Users/sinha/AppData/Local/Programs/Python/Python31/python.exe hello.py'
             }
         }
         stage('Test') {
